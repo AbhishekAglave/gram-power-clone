@@ -8,15 +8,15 @@ const DataContext = createContext();
 function App() {
   const [data, setData] = useState([]);
 
-  useEffect(() => {
-    async function fetchData() {
-      const response = await fetch("http://192.168.2.235:5000/");
-      const jsondata = await response.json();
-      setData(jsondata);
-      // console.log(jsondata);
-    }
-    fetchData();
-  }, []);
+  // useEffect(() => {
+  //   async function fetchData() {
+  //     const response = await fetch("http://192.168.2.235:5000/");
+  //     const jsondata = await response.json();
+  //     setData(jsondata);
+  //     // console.log(jsondata);
+  //   }
+  //   fetchData();
+  // }, []);
 
   return (
     <div className="App">
